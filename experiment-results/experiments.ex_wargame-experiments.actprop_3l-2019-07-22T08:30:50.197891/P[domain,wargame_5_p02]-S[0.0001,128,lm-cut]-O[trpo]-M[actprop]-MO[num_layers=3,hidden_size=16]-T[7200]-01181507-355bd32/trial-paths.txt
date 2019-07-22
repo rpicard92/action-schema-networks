@@ -1,0 +1,60 @@
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b2 b3 r4 r5) -> (strike-fourth-on-fourth-last b2 r5) -> (strike-fourth-on-fourth-last b2 r5) -> (strike-fourth-on-fourth-last b2 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b4 b5 r3 r4) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> (strike-fourth-on-fourth-last b4 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b2 b3 r4 r5) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b4 b5 r2 r3) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b2 b3 r4 r5) -> (strike-fourth-on-fourth-last b2 r5) -> (strike-fourth-on-fourth-last b2 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b4 b5 r2 r3) -> (strike-fourth-on-fourth b4 b5 r3 r4) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b2 b3 r4 r5) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> (strike-fourth-on-fourth-last b4 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b1 b2 r4 r5) -> (strike-fourth-on-fourth b2 b3 r4 r5) -> (strike-fourth-on-fourth-last b2 r5) -> (strike-fourth-on-fourth-last b2 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b3 b4 r1 r2) -> (strike-fourth-on-fourth b4 b5 r1 r2) -> (strike-fourth-on-fourth b4 b5 r2 r3) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b4 b5 r2 r3) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b1 b2 r4 r5) -> (strike-fourth-on-fourth-last b1 r5) -> (strike-fourth-on-fourth-last b1 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b3 b4 r1 r2) -> (strike-fourth-on-fourth b4 b5 r1 r2) -> (strike-fourth-on-fourth b4 b5 r2 r3) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b4 b5 r3 r4) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b4 b5 r3 r4) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> (strike-fourth-on-fourth-last b4 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b1 b2 r4 r5) -> (strike-fourth-on-fourth b2 b3 r4 r5) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> (strike-fourth-on-fourth-last b4 r5) -> (strike-fourth-on-fourth-last b4 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b4 b5 r2 r3) -> (strike-fourth-on-fourth b4 b5 r3 r4) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b3 b4 r1 r2) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b4 b5 r3 r4) -> (strike-fourth-on-fourth b4 b5 r4 r5) -> (strike-fourth-on-fourth-last b4 r5) -> (strike-fourth-on-fourth-last b4 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b2 b3 r4 r5) -> (strike-fourth-on-fourth-last b2 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b1 b2 r4 r5) -> (strike-fourth-on-fourth-last b1 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b1 b2 r2 r3) -> (strike-fourth-on-fourth b1 b2 r3 r4) -> (strike-fourth-on-fourth b2 b3 r3 r4) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b3 b4 r4 r5) -> (strike-fourth-on-fourth-last b3 r5) -> (strike-fourth-on-fourth-last b3 r5) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth b2 b3 r1 r2) -> (strike-fourth-on-fourth b2 b3 r2 r3) -> (strike-fourth-on-fourth b3 b4 r2 r3) -> (strike-fourth-on-fourth b3 b4 r3 r4) -> (strike-fourth-on-fourth b4 b5 r3 r4) -> FAIL! D:
+

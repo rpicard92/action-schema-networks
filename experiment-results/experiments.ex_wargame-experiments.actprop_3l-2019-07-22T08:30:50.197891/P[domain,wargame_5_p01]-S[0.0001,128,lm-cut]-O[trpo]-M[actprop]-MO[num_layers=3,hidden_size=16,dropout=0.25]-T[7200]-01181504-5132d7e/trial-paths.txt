@@ -1,0 +1,60 @@
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> FAIL! D:
+
+(strike-fourth-on-fourth b1 b2 r1 r2) -> (strike-fourth-on-fourth-last b1 r2) -> GOAL! :D
+

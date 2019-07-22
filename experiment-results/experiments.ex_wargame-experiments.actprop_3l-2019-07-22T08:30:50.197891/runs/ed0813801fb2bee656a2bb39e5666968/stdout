@@ -1,0 +1,47 @@
+Unique prefix: P[domain,wargame_5_p01]-S[0.0001,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01181507-3525c7c
+Log file: ./experiment-results/experiments.ex_wargame-experiments.actprop_3l-2019-07-22T08:30:50.197891/P[domain,wargame_5_p01]-S[0.0001,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01181507-3525c7c/logs.csv
+Snapshot directory: ./experiment-results/experiments.ex_wargame-experiments.actprop_3l-2019-07-22T08:30:50.197891/P[domain,wargame_5_p01]-S[0.0001,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01181507-3525c7c/snapshots
+Training supervised
+No problem name given, will use all discovered problems
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 52
+  Total ignored (empty) a.: 0
+  Total considered actions: 52
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 114
+[medium relaxation] number of actions: 114
+[strong relaxation] number of actions: 114
+[weak relaxation] number of actions: 114
+[medium relaxation] number of actions: 114
+[strong relaxation] number of actions: 114
+Waiting 3.00s for rpyc connection
+Loading problems wargame_5_p01
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 52
+  Total ignored (empty) a.: 0
+  Total considered actions: 52
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 114
+[medium relaxation] number of actions: 114
+[strong relaxation] number of actions: 114
+[weak relaxation] number of actions: 114
+[medium relaxation] number of actions: 114
+[strong relaxation] number of actions: 114
+Starting service and policy for wargame_5_p01
+Waiting 3.00s for rpyc connection
+hidden_size: 16, num_layers: 3, dropout: 0.000000, norm_response: 0
+Reloading weight manager (resuming training)
+Evaluating on wargame_5_p01
+Evaluating policy
+Trial results:
+turn_limit: 300
+trials: 30
+all_goal_reached: [True, True, False, False, True, False, True, True, True, False, True, False, False, False, False, True, True, False, True, False, True, True, False, True, True, True, True, True, False, True]
+all_exec_times: [0.2898526191711426, 0.011810064315795898, 0.007270336151123047, 0.007172584533691406, 0.015461206436157227, 0.007228374481201172, 0.015400171279907227, 0.011064767837524414, 0.011717557907104492, 0.008236885070800781, 0.02495884895324707, 0.0072078704833984375, 0.007283210754394531, 0.007537364959716797, 0.007211923599243164, 0.01590561866760254, 0.012120246887207031, 0.007134199142456055, 0.011572122573852539, 0.008260488510131836, 0.015607595443725586, 0.01134490966796875, 0.00754094123840332, 0.0193023681640625, 0.015099048614501953, 0.020549774169921875, 0.03616142272949219, 0.011812686920166016, 0.007137298583984375, 0.01622796058654785]
+all_costs: [3, 2, 1, 1, 3, 1, 3, 2, 2, 1, 5, 1, 1, 1, 1, 3, 2, 1, 2, 1, 3, 2, 1, 4, 3, 4, 8, 2, 1, 3]
