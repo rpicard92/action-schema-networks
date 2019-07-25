@@ -362,7 +362,7 @@
 				)
 			)
 		)
-		; fourth-on-fifth - two left
+		; fifth-on-fourth - two left
 		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (behind ?b2 ?b1) (not (last ?b1)) (last ?b2) (not (last ?b3)) )
 			(probabilistic 
 				1/4 
@@ -387,7 +387,7 @@
 
 		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
 		; fourth-on-fifth - more than two left
-		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (behind ?b2 ?b1) (not (last ?b1)) (not (last ?b2)) (last ?b3) )
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (behind ?b2 ?b1) (not (last ?b1)) (not (last ?b2)) (last ?b3) )
 			(probabilistic 
 				1/4 
 				(and 
@@ -407,8 +407,8 @@
 				)
 			)
 		)
-		; fourth-on-fourth - two left
-		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (behind ?b2 ?b1) (not (last ?b1)) (last ?b2) (not (last ?b3)) )
+		; fourth-on-fifth - two left
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (behind ?b2 ?b1) (not (last ?b1)) (last ?b2) (not (last ?b3)) )
 			(probabilistic 
 				1/4 
 				(and 
