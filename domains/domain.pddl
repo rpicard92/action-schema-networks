@@ -5,13 +5,15 @@
 	(blue ?f - fighter)
 	(red ?f - fighter)
 	(fourth-gen ?f - fighter) 
+	(fifth-gen ?f - fighter) 
 	(front ?f - fighter)
 	(last ?f - fighter)  
 	(destroyed ?f - fighter)
 	(behind ?f1 ?f2 - fighter)
 	)
 
-  (:action strike-fourth-on-fourth
+  ; fourth on fourth
+  (:action strike
     :parameters (?b1 ?b2 ?r1 ?r2 - fighter)
     :precondition 
 	(and 
@@ -21,81 +23,212 @@
 	(red ?r2)		
 	(front ?b1) 
 	(front ?r1) 
-	(fourth-gen ?b1) 
-	(fourth-gen ?r1) 
-	(behind ?b2 ?b1)
-	(behind ?r2 ?r1)
 	)
-    :effect (probabilistic
-        1/2 
-	(and 
-	(destroyed ?b1) 
-	(not (front ?b1)) 
-	(front ?b2) 
-	(not (behind ?b2 ?b1))
-	)
-        1/2 
-	(and 
-	(destroyed ?r1) 
-	(not (front ?r1)) 
-	(front ?r2) 
-	(not (behind ?r2 ?r1))
-  	)
-	)
-  )
+    :effect (and
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+		; fourth-on-fourth
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (behind ?b2 ?b1) (behind ?r2 ?r1) (not (last ?b1)) (not (last ?r1)) )
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (not (last ?r1)))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (not (last ?b1)) (last ?r1))
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5
+				(destroyed ?r1)
+			)
+		)
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (last ?r1))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5
+				(destroyed ?r1)
+			)
+		)
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+		; fifth-on-fifth
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (behind ?b2 ?b1) (behind ?r2 ?r1) (not (last ?b1)) (not (last ?r1)) )
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (not (last ?r1)))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (not (last ?b1)) (last ?r1))
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5
+				(destroyed ?r1)
+			)
+		)
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (last ?r1))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5
+				(destroyed ?r1)
+			)
+		)
 
-  (:action strike-fourth-on-fourth-last
-    :parameters (?b1 ?r1 - fighter)
-    :precondition (and 
-	(blue ?b1)
-	(red ?r1)	
-	(front ?b1) 
-	(front ?r1) 
-	(fourth-gen ?b1) 
-	(fourth-gen ?r1) 
-	(or (last ?b1) (last ?r1))
-	)
-    :effect (probabilistic
-        1/2 (destroyed ?b1)
-        1/2 (destroyed ?r1)
-  	)
-  )
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+		; fifth-on-fourth
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (behind ?b2 ?b1) (behind ?r2 ?r1) (not (last ?b1)) (not (last ?r1)) )
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (not (last ?r1)))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (not (last ?b1)) (last ?r1))
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5
+				(destroyed ?r1)
+			)
+		)
+		(when (and (fifth-gen ?b1) (not (fourth-gen ?b1)) (fourth-gen ?r1) (not (fifth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (last ?r1))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5
+				(destroyed ?r1)
+			)
+		)
 
-  (:action evade_4th_on_4th
-    :parameters 
-	(?b1 ?b2 ?B3 ?r1 - fighter)
-    :precondition 
-	(and 
-	(blue ?b1)
-	(blue ?b2)
-	(red ?r1)	
-	(front ?b1) 
-	(front ?r1) 
-	(fourth-gen ?b1) 
-	(fourth-gen ?r1)
-	(behind ?b2 ?b1)
-	(last ?b3)
-	(not (last ?b1))
+		;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; 
+		; fourth-on-fifth
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (behind ?b2 ?b1) (behind ?r2 ?r1) (not (last ?b1)) (not (last ?r1)) )
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (not (last ?r1)))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5 (and
+				(destroyed ?r1) 
+				(not (front ?r1)) 
+				(front ?r2) 
+				(not (behind ?r2 ?r1))
+				)
+			)
+		)
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (not (last ?b1)) (last ?r1))
+			(probabilistic 
+				0.5 (and 
+				(destroyed ?b1) 
+				(not (front ?b1)) 
+				(front ?b2) 
+				(not (behind ?b2 ?b1))
+				)
+				0.5
+				(destroyed ?r1)
+			)
+		)
+		(when (and (fourth-gen ?b1) (not (fifth-gen ?b1)) (fifth-gen ?r1) (not (fourth-gen ?r1)) (or (not (behind ?b2 ?b1)) (not (behind ?r2 ?r1))) (last ?b1) (last ?r1))
+			(probabilistic 
+				0.5
+				(destroyed ?b1)
+				0.5
+				(destroyed ?r1)
+			)
+		)
+
 	)
-    :effect
-      (probabilistic
-        1/4 
-	(and 
-	(destroyed ?b1) 
-	(not (front ?b1)) 
-	(front ?b2) 
-	(not (behind ?b2 ?b1))
-	)
-        3/4 
-	(and 
-	(not (behind ?b2 ?b1)) 
-	(behind ?b1 ?b3) 
-	(last ?b1) 
-	(not (last ?b3)) 
-	(front ?b2)
-	(not (front ?B1)) 
-	)
-  	)
-  )
+   )
 )
 
