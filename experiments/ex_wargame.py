@@ -1,13 +1,15 @@
-"""For experiments on Exploding Blocksworld."""
+"""For experiments on Exploding Wargame."""
 
 PDDL_DIR = '../problems/ippc08/domains/wargame/'
 COMMON_PDDLS = ['domain.pddl']
 TRAIN_PDDLS = [
-    'wargame_5_p01.pddl'
+    'problem_3_aircraft_rand_1.pddl',
+    'problem_3_aircraft_rand_2.pddl',
+    'problem_3_aircraft_rand_3.pddl'
 ]
 TRAIN_NAMES = None
 TEST_RUNS = [
-    (['wargame_5_p01.pddl'], None),
-    (['wargame_5_p02.pddl'], None)
+    (['problem_3_aircraft_rand_4.pddl'], None),
+    (['problem_3_aircraft_rand_5.pddl'], None),
 
 ]  # yapf: disable
