@@ -1,0 +1,194 @@
+Unique prefix: P[domain,problem_3_aircraft_rand_0,problem_3_airc...]-S[0.0001,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16,dropout=0.25]-T[7200]-01187658-439a75d
+Log file: ./experiment-results/experiments.ex_wargame-experiments.actprop_3l-2019-07-26T15:04:56.583101/P[domain,problem_3_aircraft_rand_0,problem_3_airc...]-S[0.0001,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16,dropout=0.25]-T[7200]-01187658-439a75d/logs.csv
+Snapshot directory: ./experiment-results/experiments.ex_wargame-experiments.actprop_3l-2019-07-26T15:04:56.583101/P[domain,problem_3_aircraft_rand_0,problem_3_airc...]-S[0.0001,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16,dropout=0.25]-T[7200]-01187658-439a75d/snapshots
+Training supervised
+No problem name given, will use all discovered problems
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 54
+  Total ignored (empty) a.: 0
+  Total considered actions: 54
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 651
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[weak relaxation] number of actions: 2451
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+Waiting 3.00s for rpyc connection
+Loading problems problem_3_aircraft_rand_0, problem_3_aircraft_rand_1, problem_3_aircraft_rand_2, problem_3_aircraft_rand_3, problem_3_aircraft_rand_4
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 54
+  Total ignored (empty) a.: 0
+  Total considered actions: 54
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 651
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[weak relaxation] number of actions: 2451
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 54
+  Total ignored (empty) a.: 0
+  Total considered actions: 54
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 651
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[weak relaxation] number of actions: 2451
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 54
+  Total ignored (empty) a.: 0
+  Total considered actions: 54
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 651
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[weak relaxation] number of actions: 2451
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 54
+  Total ignored (empty) a.: 0
+  Total considered actions: 54
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 651
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[weak relaxation] number of actions: 2451
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 54
+  Total ignored (empty) a.: 0
+  Total considered actions: 54
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 651
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+[weak relaxation] number of actions: 2451
+[medium relaxation] number of actions: 2451
+[strong relaxation] number of actions: 2451
+Starting service and policy for problem_3_aircraft_rand_0
+Waiting 2.99s for rpyc connection
+hidden_size: 16, num_layers: 3, dropout: 0.250000, norm_response: 0
+Creating new weight manager (not resuming)
+Starting service and policy for problem_3_aircraft_rand_1
+hidden_size: 16, num_layers: 3, dropout: 0.250000, norm_response: 0
+Re-using same weight manager
+Starting service and policy for problem_3_aircraft_rand_2
+hidden_size: 16, num_layers: 3, dropout: 0.250000, norm_response: 0
+Re-using same weight manager
+Starting service and policy for problem_3_aircraft_rand_3
+hidden_size: 16, num_layers: 3, dropout: 0.250000, norm_response: 0
+Re-using same weight manager
+Starting service and policy for problem_3_aircraft_rand_4
+hidden_size: 16, num_layers: 3, dropout: 0.250000, norm_response: 0
+Re-using same weight manager
+Training supervised
+Evaluating on problem_3_aircraft_rand_0
+Evaluating policy
+Trial results:
+turn_limit: 300
+trials: 30
+all_goal_reached: [False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, True, True]
+all_exec_times: [1.4934444427490234, 1.5000369548797607, 1.4961559772491455, 1.493821382522583, 1.487579107284546, 1.4876620769500732, 1.488006353378296, 1.4814631938934326, 1.48994779586792, 0.08589005470275879, 1.4856348037719727, 1.492814302444458, 1.5005226135253906, 1.4974784851074219, 1.4893858432769775, 1.4836065769195557, 1.5001301765441895, 1.4984519481658936, 1.5051276683807373, 1.4969072341918945, 1.492727518081665, 1.4870374202728271, 1.4935126304626465, 1.4921092987060547, 1.4913556575775146, 1.4902653694152832, 1.4863827228546143, 1.4970200061798096, 0.07447457313537598, 0.0640254020690918]
+all_costs: [299, 299, 299, 299, 299, 299, 299, 299, 299, 16, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 14, 12]
+Evaluating on problem_3_aircraft_rand_1
+Evaluating policy
+Trial results:
+turn_limit: 300
+trials: 30
+all_goal_reached: [False, True, False, False, False, False, False, True, True, False, True, False, True, False, True, False, False, False, True, False, False, True, True, True, True, False, False, False, True, False]
+all_exec_times: [1.4708621501922607, 0.019713163375854492, 1.4664363861083984, 1.4628219604492188, 1.469679594039917, 1.4632363319396973, 1.473038911819458, 0.018192052841186523, 0.06943869590759277, 1.4589486122131348, 0.018088102340698242, 1.4580998420715332, 0.02399444580078125, 1.4620330333709717, 0.018131732940673828, 1.4668712615966797, 1.469506025314331, 1.4631154537200928, 0.022917509078979492, 1.4543991088867188, 1.4548280239105225, 0.049265384674072266, 0.043976783752441406, 0.02810835838317871, 0.02874135971069336, 1.4806373119354248, 1.4594354629516602, 1.4670650959014893, 0.03450131416320801, 1.4721026420593262]
+all_costs: [299, 3, 299, 299, 299, 299, 299, 3, 13, 299, 3, 299, 4, 299, 3, 299, 299, 299, 4, 299, 299, 9, 8, 5, 5, 299, 299, 299, 6, 299]
+Evaluating on problem_3_aircraft_rand_2
+Evaluating policy
+Trial results:
+turn_limit: 300
+trials: 30
+all_goal_reached: [False, False, False, False, False, False, False, False, False, True, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False, False]
+all_exec_times: [1.4682714939117432, 1.4578602313995361, 1.462864637374878, 1.4652209281921387, 1.4624125957489014, 1.469637393951416, 1.477125883102417, 1.4760727882385254, 1.4694597721099854, 0.020096778869628906, 1.464421033859253, 1.4658513069152832, 1.466169834136963, 1.4764254093170166, 1.462862253189087, 1.465193748474121, 1.4672141075134277, 1.4691388607025146, 1.4684696197509766, 1.4647107124328613, 1.4642055034637451, 1.4652493000030518, 1.463057041168213, 1.4701149463653564, 1.4606575965881348, 1.4739086627960205, 1.4631800651550293, 1.4689695835113525, 1.463341474533081, 1.4646344184875488]
+all_costs: [299, 299, 299, 299, 299, 299, 299, 299, 299, 3, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299, 299]
+Evaluating on problem_3_aircraft_rand_3
+Evaluating policy
+Trial results:
+turn_limit: 300
+trials: 30
+all_goal_reached: [True, True, True, True, True, True, True, True, True, True, True, False, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, True, False, True]
+all_exec_times: [0.04611015319824219, 0.03849315643310547, 0.04372811317443848, 0.018196582794189453, 0.06681251525878906, 0.018441200256347656, 0.018583297729492188, 0.0377507209777832, 0.01848316192626953, 0.027957916259765625, 0.022886991500854492, 1.4603602886199951, 0.03270888328552246, 0.04252457618713379, 0.04846477508544922, 0.033228397369384766, 0.028305768966674805, 0.02912306785583496, 0.03716707229614258, 0.018910884857177734, 0.04436326026916504, 0.029349327087402344, 0.01859283447265625, 0.018152475357055664, 0.057698965072631836, 0.058156728744506836, 0.06152653694152832, 0.03317117691040039, 1.467226266860962, 0.03302645683288574]
+all_costs: [8, 7, 8, 3, 13, 3, 3, 7, 3, 5, 4, 299, 6, 8, 9, 6, 5, 5, 7, 3, 8, 5, 3, 3, 11, 11, 12, 6, 299, 6]
+Evaluating on problem_3_aircraft_rand_4
+Evaluating policy
+Trial results:
+turn_limit: 300
+trials: 30
+all_goal_reached: [False, False, True, True, False, False, False, False, False, False, False, False, True, False, True, False, True, False, False, False, True, False, False, True, True, False, True, False, False, True]
+all_exec_times: [1.456437349319458, 1.4581396579742432, 0.04759049415588379, 0.02378535270690918, 1.473757028579712, 1.457174301147461, 1.459129810333252, 1.4590013027191162, 1.4553213119506836, 1.4598383903503418, 1.4591448307037354, 1.4642784595489502, 0.01845717430114746, 1.4846537113189697, 0.022925615310668945, 1.4689216613769531, 0.03522539138793945, 1.4668731689453125, 1.4626061916351318, 1.470238208770752, 0.0289309024810791, 1.4631633758544922, 1.4654548168182373, 0.04850625991821289, 0.02779841423034668, 1.4702293872833252, 0.03730916976928711, 1.463775634765625, 1.462501049041748, 0.018242835998535156]
+all_costs: [299, 299, 9, 4, 299, 299, 299, 299, 299, 299, 299, 299, 3, 299, 4, 299, 6, 299, 299, 299, 5, 299, 299, 9, 5, 299, 7, 299, 299, 3]
+Child process starting OneShotServer <rpyc.utils.server.OneShotServer object at 0x7fe22ac2e630>
+Parsing 6 PDDL files
+
+Information for problem "problem_3_aircraft_rand_4":
+Propositions: 48
+Ground actions: 37
+Mdpsim_Domain: wargame
+Lifted actions: 2
+Predicates: 8
+
