@@ -1,0 +1,3 @@
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:28: assuming `:disjunctive-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:34: assuming `:negative-preconditions' requirement

@@ -1,0 +1,41 @@
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:28: assuming `:disjunctive-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:34: assuming `:negative-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:28: assuming `:disjunctive-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:34: assuming `:negative-preconditions' requirement
+Traceback (most recent call last):
+  File "./fpg.py", line 924, in <module>
+    main()
+  File "./fpg.py", line 913, in main
+    main_supervised(args, unique_prefix, snapshot_dir, scratch_dir)
+  File "./fpg.py", line 798, in main_supervised
+    problems, weight_manager = make_services(args)
+  File "./fpg.py", line 781, in make_services
+    problem = SingleProblem(problem_name, problem_server)
+  File "./fpg.py", line 731, in __init__
+    self.problem_service.get_meta())
+  File "/home/ron/Desktop/git/asnets/deepfpg/multiprob.py", line 53, in to_local
+    return deepcopy(obj)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 220, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/usr/lib/python3.6/copy.py", line 220, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/usr/lib/python3.6/copy.py", line 159, in deepcopy
+    copier = getattr(x, "__deepcopy__", None)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/netref.py", line 151, in __getattribute__
+    return syncreq(self, consts.HANDLE_GETATTR, name)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/netref.py", line 72, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/protocol.py", line 519, in sync_request
+    self.sync_recv_and_dispatch(timeout, True)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/protocol.py", line 414, in sync_recv_and_dispatch
+    data = self._recv(timeout, wait_for_lock = False)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/protocol.py", line 388, in _recv
+    data = self._channel.recv()
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/channel.py", line 50, in recv
+    header = self.stream.read(self.FRAME_HEADER.size)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/stream.py", line 226, in read
+    raise EOFError("connection closed by peer")
+EOFError: connection closed by peer

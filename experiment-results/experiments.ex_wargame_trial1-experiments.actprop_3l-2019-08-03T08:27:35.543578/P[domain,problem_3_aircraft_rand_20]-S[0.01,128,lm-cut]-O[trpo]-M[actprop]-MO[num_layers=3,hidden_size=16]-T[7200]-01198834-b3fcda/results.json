@@ -1,0 +1,354 @@
+{
+  "no_train": true,
+  "args_problems": null,
+  "problem": "problem_3_aircraft_rand_20",
+  "timeout": 7200.0,
+  "optimiser": "trpo",
+  "model": "actprop",
+  "model_opts": {
+    "num_layers": "3",
+    "hidden_size": "16"
+  },
+  "all_args": [
+    "--no-train",
+    "--resume-from",
+    "./experiment-results/experiments.ex_wargame_trial1-experiments.actprop_3l-2019-08-03T08:27:35.543578/P[domain,problem_3_aircraft_rand_1,problem_3_airc...]-S[0.01,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16,dropout=0.25]-T[7200]-01198781-5988c7b/snapshots/snapshot_4_0.920000.pkl",
+    "-e",
+    "./experiment-results/experiments.ex_wargame_trial1-experiments.actprop_3l-2019-08-03T08:27:35.543578",
+    "--supervised",
+    "-O",
+    "num_layers=3,hidden_size=16",
+    "--det-eval",
+    "--no-use-lm-cuts",
+    "-R",
+    "30",
+    "-m",
+    "actprop",
+    "-L",
+    "300",
+    "-t",
+    "7200",
+    "--supervised-lr",
+    "0.01",
+    "--supervised-bs",
+    "128",
+    "--supervised-teacher-heur",
+    "lm-cut",
+    "../problems/ippc08/domains/wargame/domain.pddl",
+    "../problems/ippc08/domains/wargame/problem_3_aircraft_rand_20.pddl"
+  ],
+  "elapsed_opt_time": null,
+  "elapsed_opt_iters": null,
+  "trial_paths": [
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b1 b2 r3 r2)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b1 b2 r3 r2)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b1 b2 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b1 b2 r3 r2)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b1 b2 r3 r2)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "(strike-short-range b3 b1 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b1 b2 r2 r3)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-long-range b2 b3 r3 r2)",
+      "GOAL! :D"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-short-range b3 b1 r1 r2)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ],
+    [
+      "(strike-long-range b1 b2 r1 r2)",
+      "(strike-long-range b2 b3 r1 r2)",
+      "(strike-long-range b2 b3 r2 r3)",
+      "(strike-short-range b3 b1 r2 r3)",
+      "FAIL! D:"
+    ]
+  ],
+  "turn_limit": 300,
+  "trials": 30,
+  "all_goal_reached": [
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false
+  ],
+  "all_exec_times": [
+    0.3185310363769531,
+    0.02661895751953125,
+    0.02643609046936035,
+    0.03227710723876953,
+    0.02597498893737793,
+    0.025815486907958984,
+    0.020921707153320312,
+    0.032181739807128906,
+    0.026824474334716797,
+    0.031868696212768555,
+    0.0283355712890625,
+    0.025890588760375977,
+    0.020659685134887695,
+    0.031966447830200195,
+    0.02325129508972168,
+    0.02268838882446289,
+    0.020780086517333984,
+    0.026739120483398438,
+    0.03205084800720215,
+    0.02704906463623047,
+    0.03332233428955078,
+    0.026880264282226562,
+    0.025962352752685547,
+    0.03165555000305176,
+    0.03200793266296387,
+    0.026237964630126953,
+    0.02593684196472168,
+    0.021416902542114258,
+    0.026504039764404297,
+    0.02616429328918457
+  ],
+  "all_costs": [
+    4,
+    4,
+    4,
+    5,
+    4,
+    4,
+    3,
+    5,
+    4,
+    5,
+    4,
+    4,
+    3,
+    5,
+    3,
+    3,
+    3,
+    4,
+    5,
+    4,
+    5,
+    4,
+    4,
+    5,
+    5,
+    4,
+    4,
+    3,
+    4,
+    4
+  ]
+}

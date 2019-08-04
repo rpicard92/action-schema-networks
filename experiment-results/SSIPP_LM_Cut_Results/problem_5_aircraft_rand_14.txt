@@ -1,0 +1,228 @@
+This is SSiPP (v 0.1)
+(Developed by F. Trevizan (felipe@trevizan.org)
+GIT HASH: 49e922b4cbdf6d7278a34446ae6fc1732efb6fec @ ron-B250M-DS3H
+COMPILED ON: Jul 22 2019 at 18:56:09
+COMPILER: 7.4.0
+USED CFLAGS: -Wall -DATOM_STATES -march=native -std=c++14 -I./ -fdiagnostics-color=always -DNDEBUG -ffast-math -O3
+
+
+**
+COMMAND: /home/ron/Desktop/git/asnets/deepfpg/ssipp/solver_ssp -h lm-cut -R 30 domain.pddl problem_5_aircraft_rand_14.pddl 
+PLANNER: "lrtdp"
+HEURISTIC: "lm-cut"
+STOP CRITERION: Fixed number of rounds (30)
+COST POLICY: ACTIONS only, unnormalized
+DEAD-END VALUE = 500
+SEED: 1564947008
+HOSTNAME: ron-B250M-DS3H
+PROBLEM NAME: problem_5_aircraft_rand_14
+**
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 1200
+  Total ignored (empty) a.: 0
+  Total considered actions: 1200
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[begin-session]
+[weak relaxation] number of actions: 2405
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 2597
+[strong relaxation] number of actions: 2597
+<cpu+sys-time-since-start>79423</cpu+sys-time-since-start>
+[Round Summary]: round # = 0
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 103381
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 1
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 7
+[Round Summary]: CPU+System time = 802
+[Round Summary]: Total COST = 7
+
+[Round Summary]: round # = 2
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 7
+[Round Summary]: CPU+System time = 769
+[Round Summary]: Total COST = 7
+
+[Round Summary]: round # = 3
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 364
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 4
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 876
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 5
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 714
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 6
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 9
+[Round Summary]: CPU+System time = 1001
+[Round Summary]: Total COST = 9
+
+[Round Summary]: round # = 7
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 7
+[Round Summary]: CPU+System time = 810
+[Round Summary]: Total COST = 7
+
+[Round Summary]: round # = 8
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 9
+[Round Summary]: CPU+System time = 1142
+[Round Summary]: Total COST = 9
+
+[Round Summary]: round # = 9
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 803
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 10
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 677
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 11
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 778
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 12
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 560
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 13
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 9
+[Round Summary]: CPU+System time = 809
+[Round Summary]: Total COST = 9
+
+[Round Summary]: round # = 14
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 542
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 15
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 540
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 16
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 910
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 17
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 727
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 18
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 1104
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 19
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 7
+[Round Summary]: CPU+System time = 854
+[Round Summary]: Total COST = 7
+
+[Round Summary]: round # = 20
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 596
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 21
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 994
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 22
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 812
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 23
+[Round Summary]: status = deadend-reached
+[Round Summary]: # of actions = 8
+[Round Summary]: CPU+System time = 773
+[Round Summary]: Total COST = 8
+
+[Round Summary]: round # = 24
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 591
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 25
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 594
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 26
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 6
+[Round Summary]: CPU+System time = 756
+[Round Summary]: Total COST = 6
+
+[Round Summary]: round # = 27
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 604
+[Round Summary]: Total COST = 5
+
+[Round Summary]: round # = 28
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 9
+[Round Summary]: CPU+System time = 1056
+[Round Summary]: Total COST = 9
+
+[Round Summary]: round # = 29
+[Round Summary]: status = goal-reached
+[Round Summary]: # of actions = 5
+[Round Summary]: CPU+System time = 606
+[Round Summary]: Total COST = 5
+
+Observed Avg cost = 6.63333
+V(s0) = 118.486
+[lm-cut heuristic heuristic]: total calls = 36
+[lm-cut heuristic heuristic]: 95CI cputime (in secs) = 0.0021216 -+ 0.0004987
+[state-hash]: number states = 36
+Wall time: 205405
+CPU+Sys time: 206508
+Ignoring Parsing CPU+Sys time: 127090
+Max Resident Mem: 11952 KB
+[end-session]

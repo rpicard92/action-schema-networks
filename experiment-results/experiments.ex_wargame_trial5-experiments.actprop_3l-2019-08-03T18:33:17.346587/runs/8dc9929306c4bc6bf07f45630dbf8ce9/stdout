@@ -1,0 +1,13 @@
+Unique prefix: P[domain,problem_16_aircraft_rand_1]-S[0.01,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01199575-5d34fcd
+Log file: ./experiment-results/experiments.ex_wargame_trial5-experiments.actprop_3l-2019-08-03T18:33:17.346587/P[domain,problem_16_aircraft_rand_1]-S[0.01,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01199575-5d34fcd/logs.csv
+Snapshot directory: ./experiment-results/experiments.ex_wargame_trial5-experiments.actprop_3l-2019-08-03T18:33:17.346587/P[domain,problem_16_aircraft_rand_1]-S[0.01,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01199575-5d34fcd/snapshots
+Training supervised
+No problem name given, will use all discovered problems
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 172800
+  Total ignored (empty) a.: 0
+  Total considered actions: 172800
+  Total early simplified a: 0
+  Total simplified actions: 0
+

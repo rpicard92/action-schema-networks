@@ -1,0 +1,42 @@
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:28: assuming `:disjunctive-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:34: assuming `:negative-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:28: assuming `:disjunctive-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:34: assuming `:negative-preconditions' requirement
+Traceback (most recent call last):
+  File "./fpg.py", line 924, in <module>
+    main()
+  File "./fpg.py", line 913, in main
+    main_supervised(args, unique_prefix, snapshot_dir, scratch_dir)
+  File "./fpg.py", line 798, in main_supervised
+    problems, weight_manager = make_services(args)
+  File "./fpg.py", line 781, in make_services
+    problem = SingleProblem(problem_name, problem_server)
+  File "./fpg.py", line 731, in __init__
+    self.problem_service.get_meta())
+  File "/home/ron/Desktop/git/asnets/deepfpg/multiprob.py", line 53, in to_local
+    return deepcopy(obj)
+  File "/usr/lib/python3.6/copy.py", line 150, in deepcopy
+    y = copier(x, memo)
+  File "/usr/lib/python3.6/copy.py", line 220, in _deepcopy_tuple
+    y = [deepcopy(a, memo) for a in x]
+  File "/usr/lib/python3.6/copy.py", line 220, in <listcomp>
+    y = [deepcopy(a, memo) for a in x]
+  File "/usr/lib/python3.6/copy.py", line 169, in deepcopy
+    rv = reductor(4)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/netref.py", line 179, in __reduce_ex__
+    return pickle.loads, (syncreq(self, consts.HANDLE_PICKLE, proto),)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/netref.py", line 72, in syncreq
+    return conn.sync_request(handler, oid, *args)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/protocol.py", line 523, in sync_request
+    raise obj
+MemoryError: 
+
+========= Remote Traceback (1) =========
+Traceback (most recent call last):
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/protocol.py", line 347, in _dispatch_request
+    res = self._HANDLERS[handler](self, *args)
+  File "/home/ron/Desktop/git/asnets/deepfpg/dfpg-env/lib/python3.6/site-packages/rpyc/core/protocol.py", line 640, in _handle_pickle
+    return pickle.dumps(self._local_objects[oid], proto)
+MemoryError
+

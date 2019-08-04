@@ -1,0 +1,18 @@
+WARNING (theano.tensor.blas): Using NumPy C-API based implementation for BLAS functions.
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:28: assuming `:disjunctive-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:34: assuming `:negative-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:28: assuming `:disjunctive-preconditions' requirement
+mdpsim:../problems/ippc08/domains/wargame/domain.pddl:34: assuming `:negative-preconditions' requirement
+WARNING:tensorflow:From /home/ron/Desktop/git/asnets/deepfpg/tf_utils.py:38: calling reduce_min (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/ron/Desktop/git/asnets/deepfpg/tf_utils.py:44: calling reduce_max (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/ron/Desktop/git/asnets/deepfpg/tf_utils.py:50: calling reduce_any (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+WARNING:tensorflow:From /home/ron/Desktop/git/asnets/deepfpg/tf_utils.py:58: calling reduce_sum (from tensorflow.python.ops.math_ops) with keep_dims is deprecated and will be removed in a future version.
+Instructions for updating:
+keep_dims is deprecated, use keepdims instead
+2019-08-03 20:06:24.460857: I tensorflow/core/platform/cpu_feature_guard.cc:137] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2

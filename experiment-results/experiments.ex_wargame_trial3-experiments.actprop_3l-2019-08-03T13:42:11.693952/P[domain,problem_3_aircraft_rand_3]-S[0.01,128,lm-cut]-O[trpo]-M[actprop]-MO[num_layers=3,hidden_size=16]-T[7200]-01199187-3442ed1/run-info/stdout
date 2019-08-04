@@ -1,0 +1,59 @@
+Unique prefix: P[domain,problem_3_aircraft_rand_3]-S[0.01,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01199187-3442ed1
+Log file: ./experiment-results/experiments.ex_wargame_trial3-experiments.actprop_3l-2019-08-03T13:42:11.693952/P[domain,problem_3_aircraft_rand_3]-S[0.01,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01199187-3442ed1/logs.csv
+Snapshot directory: ./experiment-results/experiments.ex_wargame_trial3-experiments.actprop_3l-2019-08-03T13:42:11.693952/P[domain,problem_3_aircraft_rand_3]-S[0.01,128,lm-cut]-O[trpo]-M[actprop]-MO[num_layers=3,hidden_size=16]-T[7200]-01199187-3442ed1/snapshots
+Training supervised
+No problem name given, will use all discovered problems
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 108
+  Total ignored (empty) a.: 0
+  Total considered actions: 108
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 219
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 267
+[strong relaxation] number of actions: 267
+[weak relaxation] number of actions: 267
+[medium relaxation] number of actions: 267
+[strong relaxation] number of actions: 267
+Waiting 3.00s for rpyc connection
+Loading problems problem_3_aircraft_rand_3
+[problem_t::flatten] Randomizing actionsT vector ordering
+Action parsing/translating/flattening summary:
+  Total possible actions  : 108
+  Total ignored (empty) a.: 0
+  Total considered actions: 108
+  Total early simplified a: 0
+  Total simplified actions: 0
+
+[weak relaxation] number of actions: 219
+
+[COST/ REWARD WARNING]: The actions in given problem manipulates its COST/REWARD.
+                        Bear in mind that an action cost is 1 + the manipulation.
+                        Therefore if an action A increases the reward in 1, then
+                        the cost of A will be 0 (= 1 + (-1)).
+
+[medium relaxation] number of actions: 267
+[strong relaxation] number of actions: 267
+[weak relaxation] number of actions: 267
+[medium relaxation] number of actions: 267
+[strong relaxation] number of actions: 267
+Starting service and policy for problem_3_aircraft_rand_3
+Waiting 3.00s for rpyc connection
+hidden_size: 16, num_layers: 3, dropout: 0.000000, norm_response: 0
+Reloading weight manager (resuming training)
+Evaluating on problem_3_aircraft_rand_3
+Evaluating policy
+Trial results:
+turn_limit: 300
+trials: 30
+all_goal_reached: [True, True, True, True, True, False, False, True, True, True, True, True, True, False, False, False, True, True, True, True, True, True, False, True, True, True, True, True, True, False]
+all_exec_times: [0.33017897605895996, 0.03230643272399902, 0.021598100662231445, 0.020915985107421875, 0.02131485939025879, 0.03500628471374512, 0.037743568420410156, 0.03944206237792969, 0.024410247802734375, 0.02474522590637207, 0.02546548843383789, 0.023743867874145508, 0.02317357063293457, 0.03198719024658203, 0.03176164627075195, 0.02184271812438965, 0.020862102508544922, 0.021842241287231445, 0.021526336669921875, 0.0331578254699707, 0.02720046043395996, 0.020888805389404297, 0.03373122215270996, 0.03223776817321777, 0.022658824920654297, 0.02999091148376465, 0.021936893463134766, 0.022165775299072266, 0.03594374656677246, 0.03664708137512207]
+all_costs: [3, 5, 3, 3, 3, 5, 5, 5, 3, 3, 3, 3, 3, 5, 5, 3, 3, 3, 3, 5, 4, 3, 5, 5, 3, 4, 3, 3, 5, 5]

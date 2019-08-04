@@ -1,0 +1,60 @@
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-short-range b3 b1 r1 r2) -> (strike-short-range b3 b1 r2 r3) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> (strike-short-range b3 b1 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> (strike-short-range b3 b1 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b1 b2 r3 r1) -> (strike-long-range b2 b3 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-short-range b3 b1 r1 r2) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b1 b2 r3 r1) -> (strike-long-range b2 b3 r3 r1) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-short-range b3 b1 r1 r2) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b1 b2 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-short-range b3 b1 r1 r2) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> (strike-short-range b3 b1 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-short-range b3 b1 r1 r2) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> (strike-short-range b3 b1 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-long-range b2 b3 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-short-range b3 b1 r1 r2) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b1 b2 r3 r1) -> (strike-long-range b2 b3 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-short-range b3 b1 r1 r2) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> FAIL! D:
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> (strike-short-range b3 b1 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b1 b2 r2 r3) -> (strike-long-range b1 b2 r3 r1) -> GOAL! :D
+
+(strike-long-range b1 b2 r1 r2) -> (strike-long-range b2 b3 r1 r2) -> (strike-long-range b2 b3 r2 r3) -> (strike-short-range b3 b1 r2 r3) -> FAIL! D:
+
