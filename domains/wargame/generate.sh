@@ -1,45 +1,31 @@
 #! /bin/bash
 
-function make-wargame {
-   python generator.py "$1" "$2"
+function make_wargame {
+   python generator.py $1 $2
 }
 
-for i in {1..5}
+
+for i in {1..20}
 do
-	make-wargame 2 0
-	make-wargame 2 1
-	make-wargame 2 2
-	make-wargame 2 3
-	make-wargame 2 4
-	make-wargame 2 5
+	make_wargame 2 $i
 done
 
-for i in {1..5}
+for i in {1..20}
 do
-	make-wargame 3 0
-	make-wargame 3 1
-	make-wargame 3 2
-	make-wargame 3 3
-	make-wargame 3 4
-	make-wargame 3 5
+	make_wargame 3 $i
 done
 
-for i in {1..5}
+for i in {1..20}
 do
-	make-wargame 4 0
-	make-wargame 4 1
-	make-wargame 4 2
-	make-wargame 4 3
-	make-wargame 4 4
-	make-wargame 4 5
+	make_wargame 4 $i
 done
 
-for i in {1..5}
+for i in {1..20}
 do
-	make-wargame 5 0
-	make-wargame 5 1
-	make-wargame 5 2
-	make-wargame 5 3
-	make-wargame 5 4
-	make-wargame 5 5
+	make_wargame 5 $i
+done
+
+for i in {5..20}
+do
+	make_wargame $i 1
 done
