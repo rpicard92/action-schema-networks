@@ -5,7 +5,7 @@ import os
 import json
 from glob import glob
 import re
-
+import numpy as np
 def Average(lst): 
 	lst = [float(i) for i in lst]
 	s = sum(lst)/len(lst)
@@ -54,14 +54,21 @@ test_trial5_costs = []
 test_trial5_times = []
 test_trial5_wins = []
 
+
 total = 0
-for root, dirs, files in os.walk(".", topdown=False):
-	for name in files:
+for root, dirs, files in os.walk("."):
+	print(sorted(np.asarray(files)))
+	fls = sorted(np.asarray(files))
+	print(len(fls))
+	for i in range(0,len(fls)):
+		name = fls[i]
+		print(name)
 		#print(os.path.join(root, name))
 		s = name.split('.')
 		if(len(s) == 2):
-			if(s[1] == 'txt'):
+			if(s[1] == 'txt' and s[0] != 'collated_results'):
 				count = 0
+				ave_times = []
 				fi = str(os.path.join(root, name))
 				with open(fi) as search:
 					for line in search:
@@ -69,14 +76,18 @@ for root, dirs, files in os.walk(".", topdown=False):
 							print(str(line))
 							ave_cost = float(re.findall(r"[-+]?\d*\.\d+|\d+", line)[0])
 							print(str(ave_cost))
-						elif(str(line).find('[lm-cut heuristic heuristic]: 95CI cputime (in secs)') != -1):
-							ave_time = float(re.findall("\d+\.\d+ ", line)[0])
-							print(str(ave_time))
+						elif(str(line).find('[Round Summary]: CPU+System time') != -1):
+							ave_time_temp = float(re.findall(r"[-+]?\d*\.\d+|\d+", line)[0])
+							ave_times.append(ave_time_temp)
+							print(str(ave_time_temp))
 						elif(str(line).find('[Round Summary]: status =') != -1):
 							if(str(line).find('goal-reached') != -1):
 								count = count + 1
 
-					print(count)
+				print(count)
+				if(ave_times != []):
+					ave_time = Average(ave_times)
+					f.write(str(name) + '\n ' + str(ave_time) + '\n')
 				if(str(fi).find("rand_5") != -1 or str(fi).find("rand_4") != -1 or str(fi).find("rand_3") != -1 or str(fi).find("rand_2") != -1 or str(fi).find("rand_1") != -1):
 					train_trial1_costs.append(ave_cost)
 					train_trial1_times.append(ave_time)

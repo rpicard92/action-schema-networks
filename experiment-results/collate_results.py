@@ -4,6 +4,7 @@ import os
 
 import json
 from glob import glob
+import numpy as np
 
 def Average(lst): 
 	lst = [float(i) for i in lst]
@@ -55,8 +56,13 @@ test_trial5_times = []
 test_trial5_wins = []
 
 total = 0
-for root, dirs, files in os.walk(".", topdown=False):
-	for name in files:
+for root, dirs, files in os.walk("."):
+	print(sorted(np.asarray(files)))
+	fls = sorted(np.asarray(files))
+	print(len(fls))
+	for i in range(0,len(fls)):
+		name = fls[i]
+		print(name)
 		#print(os.path.join(root, name))
 		s = name.split('.')
 		if(len(s) == 2):
