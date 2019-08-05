@@ -6,7 +6,10 @@ import json
 from glob import glob
 
 def Average(lst): 
-    return reduce(lambda a, b: a + b, lst) / len(lst) 
+	lst = [float(i) for i in lst]
+	s = sum(lst)/len(lst)
+	return s
+
 
 f = open("collated_results.txt","w+")
 
@@ -199,5 +202,4 @@ f.close
 print('Total:' + str(total))
 					
 
-   #for name in dirs:
-      #print(os.path.join(root, name))
+

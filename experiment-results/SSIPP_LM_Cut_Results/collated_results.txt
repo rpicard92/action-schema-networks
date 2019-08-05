@@ -14,27 +14,27 @@ Total Runs: 69
 train trial 1: 
 ave_cost:6.66190392857
 ave_time:0.0272970196429
-ave_wins:30
+ave_wins:21.0535714286
 
 train trial 2: 
 ave_cost:6.66190392857
 ave_time:0.0272970196429
-ave_wins:30
+ave_wins:21.0535714286
 
 train trial 3: 
 ave_cost:6.8273324
 ave_time:0.030482978
-ave_wins:30
+ave_wins:21.14
 
 train trial 4: 
 ave_cost:6.66190392857
 ave_time:0.0272970196429
-ave_wins:30
+ave_wins:21.0535714286
 
 train trial 5: 
 ave_cost:6.8273324
 ave_time:0.030482978
-ave_wins:30
+ave_wins:21.14
 
 
 
@@ -43,25 +43,25 @@ ave_wins:30
 test trial 1: 
 ave_cost:5.14615307692
 ave_time:0.000779007692308
-ave_wins:27
+ave_wins:22.6923076923
 
 test trial 2: 
 ave_cost:5.14615307692
 ave_time:0.000779007692308
-ave_wins:27
+ave_wins:22.6923076923
 
 test trial 3: 
 ave_cost:5.18947315789
 ave_time:0.000769015789474
-ave_wins:28
+ave_wins:21.9473684211
 
 test trial 4: 
 ave_cost:5.14615307692
 ave_time:0.000779007692308
-ave_wins:27
+ave_wins:22.6923076923
 
 test trial 5: 
 ave_cost:7.09674682927
 ave_time:0.0370032073171
-ave_wins:30
+ave_wins:21.3414634146
 

@@ -7,7 +7,9 @@ from glob import glob
 import re
 
 def Average(lst): 
-    return reduce(lambda a, b: a + b, lst) / len(lst) 
+	lst = [float(i) for i in lst]
+	s = sum(lst)/len(lst)
+	return s
 
 f = open("collated_results.txt","w+")
 
@@ -59,9 +61,9 @@ for root, dirs, files in os.walk(".", topdown=False):
 		s = name.split('.')
 		if(len(s) == 2):
 			if(s[1] == 'txt'):
+				count = 0
 				fi = str(os.path.join(root, name))
 				with open(fi) as search:
-					count = 0
 					for line in search:
 						if(str(line).find('Observed Avg cost') != -1):
 							print(str(line))
@@ -71,7 +73,7 @@ for root, dirs, files in os.walk(".", topdown=False):
 							ave_time = float(re.findall("\d+\.\d+ ", line)[0])
 							print(str(ave_time))
 						elif(str(line).find('[Round Summary]: status =') != -1):
-							if(str(line).find('goal-reached')):
+							if(str(line).find('goal-reached') != -1):
 								count = count + 1
 
 					print(count)
